@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root{
+  --blue:#0473ea
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+h1,h2,h3,h4 {
+  font-family: DM Sans;
+}
+h1 {
+  font-size: 2.2rem;
+}
+
+p, ul, li, form, input, textarea, button , span{
+  box-sizing: border-box;
+  font-family: DM Sans;
+}
+button{
+  font-weight: 500;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f1f1f1; /* Puedes personalizar el color de fondo según tus preferencias */
+}
+var
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #0473ea;
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 1.12rem;
+  border-radius: 30px;
+  border: #fafafa;
+}
+.btn-sm {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0473ea;
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: #fafafa;
+}
+.btn2-sm {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  color: #0473ea;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: 1px solid #0473ea;
+}
+.none{
+  display: 'none';
+}
+
+.subtitle{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+
+#very-small-btn{
+  font-size: 0.8rem;
+  background-color: #757575;
+  padding: 3px 10px;
+  
+  width: auto;
+  height: auto;
+
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.login-with-google-btn {
+  transition: background-color .3s, box-shadow .3s;
+    
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+  
+  color: #757575;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 17px;
+  
+  &:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+  }
+  &:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+  }
+
+  
+  &:active {
+    background-color: #eeeeee;
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 
+      0 -1px 0 rgba(0, 0, 0, .04),
+      0 2px 4px rgba(0, 0, 0, .25),
+      0 0 0 3px #c8dafc;
+  }
+  
+  &:disabled {
+    filter: grayscale(100%);
+    background-color: #ebebeb;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    cursor: not-allowed;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+
+}
