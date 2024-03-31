@@ -1,104 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: Inter, sans-serif;
+}
 
 :root{
-  --blue:#0473ea
+  --blue:#1202ed
 }
 
-* {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
 }
-body {
-  background-color: #fafafa;
-  color: #333;
-}
-h1,h2,h3,h4 {
-  font-family: DM Sans;
-}
-h1 {
-  font-size: 2.2rem;
+h1{
+  font-weight: 700;
 }
 
-p, ul, li, form, input, textarea, button , span{
-  box-sizing: border-box;
-  font-family: DM Sans;
-}
-button{
-  font-weight: 500;
-}
-nav ul {
-  list-style: none;
-}
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-header{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #f1f1f1; /* Puedes personalizar el color de fondo según tus preferencias */
-}
-var
-.btn {
-  display: inline-block;
-  padding: 15px 35px;
-  background-color: #0473ea;
-  color: #fafafa;
-  text-decoration: none;
-  font-size: 1.12rem;
-  border-radius: 30px;
-  border: #fafafa;
-}
-.btn-sm {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0473ea;
-  color: #fafafa;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 30px;
-  border: #fafafa;
-}
-.btn2-sm {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #fafafa;
-  color: #0473ea;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 30px;
-  border: 1px solid #0473ea;
-}
-.none{
-  display: 'none';
-}
 
-.subtitle{
-  font-size: 1rem;
-  font-weight: bold;
-}
-.hide {
-  display: none;
-}
 
-#very-small-btn{
-  font-size: 0.8rem;
-  background-color: #757575;
-  padding: 3px 10px;
-  
-  width: auto;
-  height: auto;
 
-  align-self: flex-end;
-  margin-bottom: 20px;
-}
 
 .login-with-google-btn {
   transition: background-color .3s, box-shadow .3s;

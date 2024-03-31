@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../Styles/home.css'
+import PrimaryButton from '../Components/PrimaryButton';
 
 
 const Home = () => {
@@ -27,14 +28,12 @@ const Home = () => {
                 </div>
             </div>
         </header>
-
-        <section id="inicio">
-            <div className="hero">
-                <h1>Ahorra sin Preocupaciones </h1>
-                <p>Obtén un control total de tus gastos  <br />   Olvídate de Compartir tus Contraseñas Bancarias </p>
-                <button className='btn' onClick={navigateToSignup}>Pruébalo gratis</button>
+        <section id="main-section">
+            <div className="main-section-text">
+                <h1><span>Genio legal</span> en tu bolsillo </h1>
+                <p className ="main-p">Saul AI es un asistente legal que lee documentos y contratos, resuelve consultas y detecta problemas legales, siempre actualizado con las leyes chilenas.</p>
+                <PrimaryButton onClick={navigateToSignup} />
             </div>
-            <img src="https://firebasestorage.googleapis.com/v0/b/saving-expenses-tracker.appspot.com/o/logos%2Fahorroavion.png?alt=media&token=7a310763-a7e8-4640-9d6b-474fc461394f" alt="happy woman above a plane happy" />
         </section>
 
         <section id="frase1">

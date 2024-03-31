@@ -41,7 +41,7 @@ const Tracker = () => {
               </div>
           </div>
         <div className='hamburger-icon' onClick={toggleSidebar}>
-          <img src={HambugerMenuIcon} alt="hamburger menu icon" className='hamburger-menu-icon' />
+          {<img src={HambugerMenuIcon} alt="hamburger menu icon" className='hamburger-menu-icon' />}
         </div>
         {mobileSidebar && < TrackerSidebar className="sidebar-mobile" setActiveLinkCallback={setActiveLink}/>}
       </div>
