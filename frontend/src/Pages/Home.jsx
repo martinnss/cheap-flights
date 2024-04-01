@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../Styles/home.css'
 import PrimaryButton from '../Components/PrimaryButton';
-
+import HeaderBar from '../Containers/HeaderBar';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -16,23 +16,13 @@ const Home = () => {
 
     return (
     <body>
-        <header>
-            <div className="header">
-                <div className="logo" id='logo'>
-                    <img src="https://firebasestorage.googleapis.com/v0/b/saving-expenses-tracker.appspot.com/o/logos%2Foutput-onlinepngtools%20(1).png?alt=media&token=3cc14b4a-0b1f-4fd8-8bd1-b54a2861b3ef" alt="walleton logo, a pig" />
-                    <h1 className='logo-text'>Walleton</h1>
-                </div>
-                <div className="login">
-                    <p onClick={navigateToLogin}>Iniciar sesión</p>
-                    <button className='btn-sm' onClick={navigateToSignup} >Empezar</button>
-                </div>
-            </div>
-        </header>
+
+        <HeaderBar />
         <section id="main-section">
             <div className="main-section-text">
                 <h1><span>Genio legal</span> en tu bolsillo </h1>
                 <p className ="main-p">Saul AI es un asistente legal que lee documentos y contratos, resuelve consultas y detecta problemas legales, siempre actualizado con las leyes chilenas.</p>
-                <PrimaryButton onClick={navigateToSignup} />
+                <PrimaryButton onClick={navigateToSignup} text="Pruébalo Gratis" height="3rem" width="15rem" />
             </div>
         </section>
 
