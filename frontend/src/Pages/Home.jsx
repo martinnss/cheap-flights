@@ -1,8 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../Styles/home.css'
+
 import PrimaryButton from '../Components/PrimaryButton';
 import HeaderBar from '../Containers/HeaderBar';
+import DarkContainerBackground from '../Components/DarkBackground';
+import ClearBackground from '../Components/ClearBackground';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -43,6 +46,8 @@ const Home = () => {
                 </p>
             </div>
         </section>
+        <ClearBackground />
+        <DarkContainerBackground />
 
 
 

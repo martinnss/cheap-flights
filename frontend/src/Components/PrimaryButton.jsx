@@ -36,8 +36,8 @@ const StyledButton = styled.button`
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    background-color: #958fe2;
-    background-image: linear-gradient(315deg, #958fe2 0%, #4c41e4 74%);
+    background-color: #2215d9;
+    background-image: linear-gradient(315deg, #261bbc 0%, #2316d5 74%);
     box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
       7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
     transition: all 0.3s ease;

@@ -45,9 +45,7 @@ const LoginText = styled.p`
   margin-right: 1rem;
 `;
 
-const Button = styled.button`
-  /* Add your button styles here */
-`;
+
 
 const HeaderBar = () => {
   const navigate = useNavigate();
