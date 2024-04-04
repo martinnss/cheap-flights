@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // Define the styled button outside the component function
 const StyledButton = styled.button`
-  width: ${props => props.width || 'auto'};;
+  width: ${props => props.width || 'auto'};
   height: ${props => props.height || 'auto'};
   font-size: 1rem;
   font-weight: 600;

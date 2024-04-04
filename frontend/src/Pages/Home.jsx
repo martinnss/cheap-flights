@@ -6,6 +6,10 @@ import PrimaryButton from '../Components/PrimaryButton';
 import HeaderBar from '../Containers/HeaderBar';
 import DarkContainerBackground from '../Components/DarkBackground';
 import ClearBackground from '../Components/ClearBackground';
+import CardGlowing from '../Containers/CardGlowing';
+import CardSafari from '../Containers/CardSafari';
+import CardWithCircles from '../Containers/CardWithCircles';
+
 
 const Home = () => {
     const navigate = useNavigate();
@@ -46,9 +50,22 @@ const Home = () => {
                 </p>
             </div>
         </section>
+
         <ClearBackground />
         <DarkContainerBackground />
-
+        <ClearBackground>
+            <CardGlowing />
+        </ClearBackground>
+        <DarkContainerBackground>
+            <CardSafari />
+        </DarkContainerBackground>
+        <DarkContainerBackground>
+            <CardWithCircles mode='light'/>
+        </DarkContainerBackground>
+        <ClearBackground>
+            <CardWithCircles mode='dark'/>
+        </ClearBackground>
+        
 
 
         <section id="users">

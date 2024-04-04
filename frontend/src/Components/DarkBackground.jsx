@@ -5,7 +5,10 @@ const Background = styled.div`
     position: relative;
     width: 100vw;
     height: 50vh;
-    
+    background-image: linear-gradient(to bottom, #00176c, #000029);
+    display:flex;
+    align-items: center;
+    justify-content: center;
     
     &:before {
         content: '';
@@ -14,14 +17,15 @@ const Background = styled.div`
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(to bottom, #00176c, #000029);
         opacity: 1; 
     }
 `;
 
-const DarkContainerBackground = () => {
+const DarkContainerBackground = ({ children })  => {
   return (
-    <Background></Background>
+    <Background>
+      {children}
+    </Background>
   );
 };
 
