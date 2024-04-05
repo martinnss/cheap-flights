@@ -8,7 +8,8 @@ const StyledButton = styled.button`
   font-size: 1rem;
   font-weight: 600;
   
-  color: #fff;
+  color: ${(props) => (props.mode === 'light' ?  'var(--blue)': '#fff' )};
+  
   border-radius: 5px;
   padding: 10px 25px;
   background: transparent;
@@ -22,10 +23,11 @@ const StyledButton = styled.button`
   outline: none;
 
   &.primary-button {
-    background-color: var(--blue);
-    background-image: linear-gradient(315deg, var(--blue)0%, var(--blue) 74%);
+    background-color: ${(props) => (props.mode === 'light' ? 'rgba(255, 255, 255, 0.503)' : 'var(--blue)')};
+    background-image: ${(props) => (props.mode === 'light' ? '#ffffff8061bbc 0%, #f1f0ff 74%)' : 'linear-gradient(315deg, #261bbc 0%, #2316d5 74%)')};
     border: none;
     z-index: 1;
+    border: 2px solid var(--blue);
   }
   &.primary-button:after {
     position: absolute;
@@ -36,14 +38,14 @@ const StyledButton = styled.button`
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    background-color: #2215d9;
-    background-image: linear-gradient(315deg, #261bbc 0%, #2316d5 74%);
+    background-color: ${(props) => (props.mode === 'light' ? 'rgba(208, 220, 255, 0.175)' : 'var(--blue)')};
+    background-image: ${(props) => (props.mode === 'light' ? 'linear-gradient(315deg,  #ffffff 0%, #dadfff 74%)' : 'linear-gradient(315deg, #261bbc 0%, #070068 74%)')};
     box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
       7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
     transition: all 0.3s ease;
   }
   &:hover {
-    color: #fff;
+    color: ${(props) => (props.mode === 'light' ?  'var(--blue)': '#fff' )};
   }
   &:hover:after {
     top: 0;
@@ -54,9 +56,9 @@ const StyledButton = styled.button`
   }
 `;
 
-const PrimaryButton = ({ text, width, height }) => {
+const PrimaryButton = ({ text, width, height , mode}) => {
   return (
-    <StyledButton className="custom-btn primary-button" width={width} height={height} >{text}</StyledButton>
+    <StyledButton className="custom-btn primary-button" width={width} height={height} mode={mode} >{text}</StyledButton>
   );
 };
 

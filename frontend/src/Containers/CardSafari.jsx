@@ -5,7 +5,7 @@ const Card = styled.div`
     width: 25%;
     height: 70%;
     margin: 0 auto;
-    background-color: #F8FBFE;
+    background-color:${(props) => (props.mode ==="light" ? '#F8FBFE' : '#3c3d3f')} ;
     border-radius: 8px;
     z-index: 1;
 
@@ -43,9 +43,9 @@ const GreenBox = styled(Box)`
   background-color: #00ca4e;
 `;
 
-const CardSafari = () => {
+const CardSafari = ({mode}) => {
   return (
-    <Card>
+    <Card mode={mode}>
       <Tools>
         <Circle>
           <RedBox />
@@ -58,6 +58,7 @@ const CardSafari = () => {
         </Circle>
       </Tools>
       {/* Otro contenido dentro del componente Card */}
+      
     </Card>
   )
 }

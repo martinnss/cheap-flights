@@ -9,6 +9,7 @@ import ClearBackground from '../Components/ClearBackground';
 import CardGlowing from '../Containers/CardGlowing';
 import CardSafari from '../Containers/CardSafari';
 import CardWithCircles from '../Containers/CardWithCircles';
+import BasicDiv from '../Components/BasicDiv';
 
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
                 <h1><span>Genio legal</span> en tu bolsillo </h1>
                 <p className ="main-p">Saul AI es un asistente legal que lee documentos y contratos, resuelve consultas y detecta problemas legales, siempre actualizado con las leyes chilenas.</p>
                 <PrimaryButton onClick={navigateToSignup} text="Pruébalo Gratis" height="3rem" width="15rem" />
+                <PrimaryButton onClick={navigateToSignup} text="Pruébalo Gratis 2" height="3rem" width="15rem" mode="light" />
             </div>
         </section>
 
@@ -56,8 +58,11 @@ const Home = () => {
         <ClearBackground>
             <CardGlowing />
         </ClearBackground>
+        <ClearBackground>
+            <CardSafari mode="dark" />
+        </ClearBackground>
         <DarkContainerBackground>
-            <CardSafari />
+            <CardSafari mode="light" />
         </DarkContainerBackground>
         <DarkContainerBackground>
             <CardWithCircles mode='light'/>
@@ -65,6 +70,9 @@ const Home = () => {
         <ClearBackground>
             <CardWithCircles mode='dark'/>
         </ClearBackground>
+        <BasicDiv>
+            <h1>test children</h1>
+        </BasicDiv>
         
 
 
