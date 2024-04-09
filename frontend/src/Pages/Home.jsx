@@ -4,6 +4,7 @@ import '../Styles/home.css'
 
 import PrimaryButton from '../Components/PrimaryButton';
 import HeaderBar from '../Containers/HeaderBar';
+
 import DarkContainerBackground from '../Components/DarkBackground';
 import ClearBackground from '../Components/ClearBackground';
 import CardGlowing from '../Containers/CardGlowing';
@@ -29,9 +30,8 @@ const Home = () => {
         <section id="main-section">
             <div className="main-section-text">
                 <h1><span>Genio legal</span> en tu bolsillo </h1>
-                <p className ="main-p">Saul AI es un asistente legal que lee documentos y contratos, resuelve consultas y detecta problemas legales, siempre actualizado con las leyes chilenas.</p>
+                <p className ="main-p">Saul AI es un asistente legal que lee documentos y contratos, resuelve consultas y detecta problemas legales</p>
                 <PrimaryButton onClick={navigateToSignup} text="Pruébalo Gratis" height="3rem" width="15rem" />
-                <PrimaryButton onClick={navigateToSignup} text="Pruébalo Gratis 2" height="3rem" width="15rem" mode="light" />
             </div>
         </section>
 

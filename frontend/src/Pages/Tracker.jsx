@@ -33,6 +33,7 @@ const Tracker = () => {
       <div className='menu-sidebar'>
         < TrackerSidebar className="sidebar-web" setActiveLinkCallback={setActiveLink} />
       </div>
+      
       <div className='mobile-header'>
         <div className="header headerlogin">
               <div className="logo" id='logo'>
@@ -45,6 +46,7 @@ const Tracker = () => {
         </div>
         {mobileSidebar && < TrackerSidebar className="sidebar-mobile" setActiveLinkCallback={setActiveLink}/>}
       </div>
+
       <div className='tracker-pages'>
         {activeLink === 'FileUpload' && <FileUpload  openPopup={openPopup} className="tracker-page"/>}
         {activeLink === 'ExpenseHistory' && <ExpenseHistory className="tracker-page" />}
