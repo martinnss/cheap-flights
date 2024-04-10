@@ -11,7 +11,11 @@ const HeaderDiv = styled.div`
   position: fixed;
   height: 7rem;
   width: 100vw;
-  z-index: 10000; 
+  z-index: 10000;
+  
+  @media only screen and (max-width: 1200px) {
+    
+  }
 `;
 
 
@@ -32,6 +36,7 @@ const Header = styled.div`
   
   @media only screen and (max-width: 1200px) {
     width: 90vw;
+    height: 4.5rem;
   }
 
 `;
@@ -81,6 +86,9 @@ const LoginContainer = styled.div`
   }
 `;
 
+const HamburgerContainer = styled.div`
+  
+`
 
 
 
@@ -97,6 +105,10 @@ const HeaderBar = () => {
   return (
     <HeaderDiv >
     <Header>
+      <HamburgerContainer>
+        <HamburgerMenu />
+      </HamburgerContainer>
+
       <HeaderContainer>
         <LogoContainer>
           <LogoImg src="https://firebasestorage.googleapis.com/v0/b/saving-expenses-tracker.appspot.com/o/logos%2Foutput-onlinepngtools%20(1).png?alt=media&token=3cc14b4a-0b1f-4fd8-8bd1-b54a2861b3ef" alt="walleton logo, a pig" />
@@ -109,7 +121,7 @@ const HeaderBar = () => {
         </LoginContainer>
       </HeaderContainer>
 
-      <HamburgerMenu />
+      
       
     </Header>
     </HeaderDiv>

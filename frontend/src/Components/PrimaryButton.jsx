@@ -10,7 +10,7 @@ const StyledButton = styled.button`
   
   color: ${(props) => (props.mode === 'light' ?  'var(--blue)': '#fff' )};
   
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 25px;
   background: transparent;
   cursor: pointer;
@@ -27,7 +27,7 @@ const StyledButton = styled.button`
     background-image: ${(props) => (props.mode === 'light' ? '#ffffff8061bbc 0%, #f1f0ff 74%)' : 'linear-gradient(315deg, #261bbc 0%, #2316d5 74%)')};
     border: none;
     z-index: 1;
-    border: 2px solid var(--blue);
+    border: 1px solid var(--blue);
   }
   &.primary-button:after {
     position: absolute;
