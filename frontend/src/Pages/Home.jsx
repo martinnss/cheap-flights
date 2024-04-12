@@ -11,6 +11,7 @@ import CardGlowing from '../Containers/CardGlowing';
 import CardSafari from '../Containers/CardSafari';
 import CardWithCircles from '../Containers/CardWithCircles';
 import BasicDiv from '../Components/BasicDiv';
+import Footer from '../Containers/Footer';
 
 
 const Home = () => {
@@ -98,6 +99,10 @@ const Home = () => {
                 </div>
             </div>
         </footer>
+        <DarkContainerBackground>
+            <CardWithCircles mode='light'/>
+        </DarkContainerBackground>
+        <Footer />
     </body>
     );
 };
