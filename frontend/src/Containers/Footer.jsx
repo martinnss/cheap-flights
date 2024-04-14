@@ -5,21 +5,32 @@ const FooterContainer = styled.div`
     background-color: var(--darkblue);
     height:30vh;
     color:white;
+
+    @media only screen and (max-width: 820px) {
+    height: 100%
+  }
 `
 const Container = styled.div`
   display: flex;
+  flex-wrap:wrap;
   width: 100vw;
   height: 100%;
+
+
 `;
 
 const Column = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  flex-direction: column; 
   justify-content: center;
   align-items: left;
   border: 1px solid black;
   padding: 0 7rem;
+
+  @media only screen and (max-width: 820px) {
+    height: 10rem
+  }
 `;
 const Footer = () => {
   return (
