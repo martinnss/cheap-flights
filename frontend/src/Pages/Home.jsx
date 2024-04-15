@@ -12,7 +12,7 @@ import CardSafari from '../Containers/CardSafari';
 import CardWithCircles from '../Containers/CardWithCircles';
 import BasicDiv from '../Components/BasicDiv';
 import Footer from '../Containers/Footer';
-
+import CardBasic from '../Containers/CardBasic';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -75,8 +75,8 @@ const Home = () => {
             <h1>test children</h1>
         </BasicDiv>
         
-
-
+        <CardBasic />
+        
         <section id="users">
             <div className="users">
                 <h2>Perfecto para...</h2>
@@ -88,20 +88,7 @@ const Home = () => {
             <button className='btn' onClick={navigateToSignup}>Pruébalo gratis</button>
         </section>
 
-        <footer>
-            <div className="footer">
-                <div class="footer-section contact">
-                        <h2 className='footer-contact'>Contacto</h2>
-                        <p className='footer-contact'>info@tustartup.com</p>
-                </div>
-                <div className="footer-bottom">
-                    <p className='footer-contact'>&copy; 2023 XXXXXX. Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </footer>
-        <DarkContainerBackground>
-            <CardWithCircles mode='light'/>
-        </DarkContainerBackground>
+
         <Footer />
     </body>
     );
