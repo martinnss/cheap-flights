@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import '../Styles/home.css'
 
 import PrimaryButton from '../Components/PrimaryButton';
@@ -15,14 +14,7 @@ import Footer from '../Containers/Footer';
 import CardBasic from '../Containers/CardBasic';
 
 const Home = () => {
-    const navigate = useNavigate();
 
-    const navigateToSignup = () => {
-        navigate('/signup');
-    };
-    const navigateToLogin = () => {
-        navigate('/login');
-    };
 
     return (
     <body>
@@ -32,7 +24,7 @@ const Home = () => {
             <div className="main-section-text">
                 <h1><span>Genio legal</span> en tu bolsillo </h1>
                 <p className ="main-p">Saul AI es un asistente legal que lee documentos y contratos, resuelve consultas y detecta problemas legales</p>
-                <PrimaryButton onClick={navigateToSignup} text="Pruébalo Gratis" height="3rem" width="15rem" />
+                <PrimaryButton text="Pruébalo Gratis" height="3rem" width="15rem" />
             </div>
         </section>
 
@@ -85,7 +77,6 @@ const Home = () => {
                 <p className='just-emojis' style={{ fontSize: '32px' }}>👩‍⚕️👨‍🔧👩‍🍳👩‍🎓👨‍💼👩‍🔬👨‍🎨👩‍✈️👨‍🚀👩‍⚖️👨‍🚒👩‍🏭👨‍🌾👩‍🔧👨‍⚕️</p>
 
             </div>
-            <button className='btn' onClick={navigateToSignup}>Pruébalo gratis</button>
         </section>
 
 
